@@ -10,3 +10,7 @@ def Part2(data):
     data = data.split("do()")
     relevantData = [d.split("don't()")[0] for d in data]
     return Part1(relevantData)
+
+def Solution(lines):
+    yield Part1(lines)
+    yield Part2(lines)

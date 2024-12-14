@@ -54,3 +54,7 @@ def Part2(data):
     rules,pageLists = parseData(data)
     mid = [sortTop(pageList,rules)[len(pageList)//2] for pageList in pageLists if not isSorted(pageList,rules)]
     return sum(mid)
+
+def Solution(lines):
+    yield Part1(lines)
+    yield Part2(lines)

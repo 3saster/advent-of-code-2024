@@ -20,3 +20,7 @@ def Part1(data):
 def Part2(data):
     data = [[int(n) for n in l.split()] for l in data]
     return sum(1 for report in data if isSafe(report,1))
+
+def Solution(lines):
+    yield Part1(lines)
+    yield Part2(lines)

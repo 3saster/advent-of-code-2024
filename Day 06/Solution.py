@@ -131,3 +131,7 @@ def Part2(data):
             obstaclesRow[y].remove(x)
             obstaclesCol[x].remove(y)
     return loops
+
+def Solution(lines):
+    yield Part1(lines)
+    yield Part2(lines)

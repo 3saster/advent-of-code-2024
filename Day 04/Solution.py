@@ -36,3 +36,7 @@ def Part2(data):
                 if {at(data,y+1,x+1),at(data,y-1,x-1)} == {'M','S'} and {at(data,y-1,x+1),at(data,y+1,x-1)} == {'M','S'}:
                     crossCenters.append((y,x))
     return len(crossCenters)
+
+def Solution(lines):
+    yield Part1(lines)
+    yield Part2(lines)

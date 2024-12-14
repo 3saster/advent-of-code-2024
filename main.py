@@ -54,8 +54,10 @@ def main() -> int:
         # Execution stuff
         lines = readInput(f"Day {int(sys.argv[1]):02}")
 
+        solution = sol.Solution(lines)
+
         tic = time.perf_counter()
-        P1 = sol.Part1(lines)
+        P1 = solution.__next__()
         toc = time.perf_counter()
         print("Part 1:")
         print("\t" + str(P1))
@@ -63,7 +65,7 @@ def main() -> int:
         print()
 
         tic = time.perf_counter()
-        P2 = sol.Part2(lines)
+        P2 = solution.__next__()
         toc = time.perf_counter()
         print("Part 2:")
         print("\t" + str(P2))
